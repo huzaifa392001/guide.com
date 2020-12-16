@@ -335,6 +335,16 @@ footer .copyright p:first-child{
 }
 
 
+/* login page */
+
+.login-section .login-btn{
+    background-color: #03c4a1;
+    color: #fff;
+    border: 1px solid #03c4a1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 991px){
     
     .about-section .image-section img{
