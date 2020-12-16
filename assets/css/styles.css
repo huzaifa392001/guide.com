@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'GT Walsheim Pro Medium';
+    src: local('GT Walsheim Pro Medium'), local('GT-Walsheim-Pro-Medium'),
+        url('../fonts/GTWalsheimPro-Medium.woff2') format('woff2'),
+        url('../fonts/GTWalsheimPro-Medium.woff') format('woff'),
+        url('../fonts/GTWalsheimPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'GT Walsheim Pro Regular';
+    src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),
+        url('../fonts/GTWalsheimProRegular.woff2') format("woff2"),
+        url('../fonts/GTWalsheimProRegular.woff') format("woff"),
+        url('../fonts/GTWalsheimProRegular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }  
+@font-face {
+    font-family: 'GT Walsheim Pro Bold';
+    src: local("GT Walsheim Pro Bold"),local("GTWalsheimProBold"),
+        url('../fonts/GTWalsheimPro-Medium.woff2') format("woff2"),
+        url('../fonts/GTWalsheim-Pro-Medium.woff') format("woff"),
+        url('../fonts/GTWalsheim-Pro-Medium.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+h1{
+    color: #252525;
+    font-family: 'GT Walsheim Pro Bold';
+    font-size: 3rem;
+}
+
+h2,h3,h4,h5,h6{
+    color: #252525;
+    font-family: 'GT Walsheim Pro Medium';
+}
+
+section , footer{
+    margin-top: 80px;
+}
+
+.about-para p{
+    font-size: 20px;
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+section hr{
+    margin-bottom: 80px;
+}
+
+#button {
+    display: inline-block;
+    background-color: #03c4a1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button i{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color:#028970;
+}
+
+#button:active {
+    background-color:#028970;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}  
+
+/* header */
+
+header nav{
+    background-color: #03c4a1;
+    font-family: 'GT Walsheim Pro Medium'!important;
+    padding-top: 35px!important;
+}
+
+header nav h1{
+    color: #f6f5f5;
+}
+
+header nav img{
+    width: 300px;
+    float: left;
+}
+
+header nav span{
+    color: #f6f5f5;
+}
+
+header nav .collapse{
+    justify-content: flex-end;
+}
+
+header nav .navbar-nav{
+    text-align: end;
+}
+
+header nav .nav-link{
+    font-size: 20px;
+    color: #f6f5f5 !important;
+    margin-right: 10px;
+}
+
+header nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+/* home section */
+
+.home-section img{
+    width: 100%;
+}
+
+/* about section */
+
+.about-section .image-section img{
+    width: 85%;
+    margin: auto;
+}
+
+.about-section .about h1{
+    color: #03c4a1;
+}
+
+.about-section .read-btn{
+    background-color: #03c4a1;
+    color: #fff;
+    border: 1px solid #03c4a1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.about-section .read-btn:hover{
+    background-color: #028970;
+    border-color: #028970;
+    text-decoration: underline;
+}
+
+/* top products section */
+
+.top-products-section .card {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 85%;
+}
+
+.top-products-section .card .card-img-top {
+    margin: auto;
+    margin-top: 15px;
+    width: auto;
+}
+
+.top-products-section .card .card-body p{
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+.top-products-section .card .read-btn{
+    background-color: #03c4a1;
+    color: #fff;
+    border: 1px solid #03c4a1;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+}
+
+.top-products-section .card .read-btn:hover{
+    background-color: #028970;
+    border-color: #028970;
+    text-decoration: underline;
+}
+
+.top-products-section .card hr{
+    margin-bottom: 15px;
+}
+
+/* footer */
+
+footer{
+    background-color: #03c4a1;
+    color: #f6f5f5;
+    padding-bottom: 30px;
+}
+
+footer h2{
+    padding-top: 50px;
+    color: #f6f5f5;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer a{
+    color: #f6f5f5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer li:hover{
+    color: #f6f5f5;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: #f6f5f5;
+    text-decoration: underline;
+}
+
+footer .cell{
+    margin-top: 50px;
+}
+
+footer i{
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+footer .socials a:first-child i{
+    margin-left: 0;
+}
+
+footer hr{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+footer .copyright p:first-child{
+    margin-right: 2px;
+    padding-right: 5px;
+    border-right: 1px solid #f6f5f5;
+}
+
+
+/* library page */
+
+.search-section{
+    margin: 0;
+}
+
+.search-section nav{
+    background-color: #fff!important;
+}
+
+.search-section .container{
+    justify-content: flex-end!important;
+}
+
+.search-section nav .search-btn{
+    border-color: #03c4a1;
+}
+
+.search-section nav .search-btn:hover{
+    background-color: #03c4a1;
+    border-color: #03c4a1;
+}
+
+.library-section .card {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 85%;
+}
+
+.library-section .card .card-img-top {
+    margin: auto;
+    margin-top: 15px;
+    width: auto;
+}
+
+.library-section .card .card-body p{
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+.library-section .card .read-btn{
+    background-color: #03c4a1;
+    color: #fff;
+    border: 1px solid #03c4a1;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+}
+
+.library-section .card .read-btn:hover{
+    background-color: #028970;
+    border-color: #028970;
+    text-decoration: underline;
+}
+
+.library-section .card hr{
+    margin-bottom: 15px;
+}
+
+.library-section .pagenation a , .library-section .pagenation li{
+    color: #03c4a1;
+    border-color: #03c4a1!important;
+}
+
+.library-section .pagenation .page-item.active .page-link{
+    background-color: #03c4a1 !important;
+    color: #fff!important;
+}
+
+
+@media screen and (max-width: 991px){
+    
+    .about-section .image-section img{
+        width: 100%;
+    }
+
+    .about-section .about{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 502px){
+    
+    header nav img{
+        width: 150px;
+        float: none;
+    }
+}
