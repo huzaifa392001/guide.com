@@ -32,6 +32,13 @@ html{
 
 body{
     margin: 0;
+    background-color: #000000!important;
+}
+
+.bg-img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 h1{
@@ -50,6 +57,7 @@ section , footer{
 }
 
 p{
+    color: #f6f5f5;
     font-size: 20px;
     line-height: 1.8;
     font-family: 'GT Walsheim Pro Regular' !important;
@@ -96,6 +104,11 @@ section hr{
     visibility: visible;
 }  
 
+.card{
+    background: transparent!important;
+    border-color: #fff!important;
+}
+
 .card .card-title{
     color: #03c4a1;
 }
@@ -109,10 +122,14 @@ section hr{
     text-decoration: none;
 }
 
+.card img:hover{
+    
+}
+
 /* header */
 
 header nav{
-    background-color: #03c4a1;
+    background: transparent;
     font-family: 'GT Walsheim Pro Medium'!important;
     padding-top: 35px!important;
 }
@@ -181,6 +198,10 @@ header nav .nav-link:hover{
 
 /* top products section */
 
+.top-products-section .bg-img{
+    opacity: 0.5;
+}
+
 .top-products-section .card {
     margin: auto;
     margin-bottom: 25px;
@@ -242,7 +263,7 @@ header nav .nav-link:hover{
 
 footer{
     margin-top: 110px;
-    background-color: #03c4a1;
+    background:transparent;
     color: #f6f5f5;
     padding-bottom: 30px;
 }
@@ -309,7 +330,7 @@ footer .copyright p:first-child{
 }
 
 .search-section nav{
-    background-color: #fff!important;
+    background: transparent;
 }
 
 .search-section .container{
@@ -318,11 +339,13 @@ footer .copyright p:first-child{
 
 .search-section nav .search-btn{
     border-color: #03c4a1;
+    color: #fff;
+    background-color: #03c4a1;
 }
 
 .search-section nav .search-btn:hover{
-    background-color: #03c4a1;
-    border-color: #03c4a1;
+    background-color: #028970;
+    border-color: #028970;
 }
 
 .library-section .card {
@@ -385,7 +408,7 @@ footer .copyright p:first-child{
     text-align: left;
     width: 100%;
     padding: 1em 0;
-    color: #7288a2;
+    color: #fff;
     font-size: 1.15rem;
     font-weight: 400;
     border: none;
@@ -485,11 +508,16 @@ footer .copyright p:first-child{
     }
 }
 
-@media screen and (max-width: 502px){
+@media screen and (max-width: 767px){
     
     header nav img{
         width: 150px;
         float: none;
+    }
+
+    .blog-section .card{
+        width: 75% !important;
+        margin: auto;
     }
 
     footer .copyright{
