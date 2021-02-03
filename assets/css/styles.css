@@ -493,6 +493,61 @@ footer .copyright p:first-child{
     font-size: 16px;
 }
 
+
+/* book page */
+
+.book-section .book{
+    background-color: rgba(255,255,255, 25%);
+    border: none;
+    border-radius: 10px;
+    padding: 40px 20px; 
+}
+
+.book-section .index{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.book-section .book-heading h1{
+    font-size: 4rem;
+    padding: 20px 0 55px;
+}
+
+.book-section .index ul{
+    list-style: none;
+    padding: 0;
+}
+
+.book-section .index ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 3;
+    /* font-size: 24px; */
+}
+
+.book-section .index ul li a:hover{
+    text-decoration: underline;
+}
+
+.book-section hr{
+    border-bottom: none;
+    border: 3px solid #fff;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.book-section .chapters{
+    margin-top: 100px!important;
+}
+
+.book-section .chapters .text{
+    color: #fff;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 2;
+}
+
 @media screen and (max-width: 991px){
     
     .about-section .image-section img{
